@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <h1 class="">Recipe</h1>
+      </div>
+      <div class="right">
+        <form action="" class="recipeForm">
+          <input
+            class="searchInput"
+            type="text"
+            placeholder="Enter Recipe Name"
+          />
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- if the meal is not availble to show  -->
+    <div class="fetchingError">
+      <p>Not Available to Show this Meal</p>
+      <b>plz Try to Seach Another Recipe</b>
+    </div>
+
+    <!-- to Store all the details of the reciepe -->
+    <div class="res recipeContainer"></div>
+
+    <!-- to show all the step to cook the food -->
+    <div class="steps">
+      <button>&lt;</button>
+    </div>
+
+    <div class="ingredientList"></div>
+
+    <div class="loader"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
